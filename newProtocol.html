@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Angio d'script - он-лайн сервис для описания ангиограмм</title>
+	<meta charset="utf-8">
+	<meta name="yandex-verification" content="6deab9f49a99d132" />
+	<style>
+		body {
+			background-image: url();
+			padding: 0 10px;
+		}
+		header {
+			background-image: url(img/room70.jpg); 
+			height: 100px;
+			border-bottom: 2px solid gray;
+			vertical-align: top;
+			background-repeat: no-repeat;
+			white-space: nowrap;
+		}
+		
+		footer {
+			background-color: #CCCCCC;
+			border-top: 2px solid gray;
+			padding: 10px;
+			font-size: 10pt;
+		}
+		footer > div {
+			display: inline-block;
+		}
+		button.cardiac {
+			display: none;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<h1 style="margin-left: 25%; color:#000033; font-size: 50pt; margin-top: 0">A n g i o &nbsp; P R O</h1>
+		<p style="margin-top: -55px; margin-left: 10px"><i><b>Он-лайн операционный журнал для рентгенэндоваскулярной хирургии</b></i></p>
+	</header>
+	<main>
+		<h2>Новый протокол</h2>
+		<table border="0">
+			<tr>
+				<td>Фамилия И.О.</td><td><input type="text" name="fio"></td>
+			</tr>
+			<tr>
+				<td>Номер И.Б.</td><td><input type="text" name="histNum"></td>
+			</tr>
+			<tr>
+				<td>Дата рождения</td><td><input type="date" name="birthDate"></td>
+			</tr>
+			<tr>
+				<td>Пол</td><td><input type="radio" name="gender" id="male"><label for="male">Мужской</label>
+				<input type="radio" name="gender" id="female"><label for="female">Женский</label></td>
+			</tr>
+			<tr>
+				<td>Место жительства</td><td><input type="text" name="lifePlace"></td>
+			</tr>
+			<tr>
+				<td>Место работы</td><td><input type="text" name="workPlace"></td>
+			</tr>
+			<tr>
+				<td>Дата поступления</td><td><input type="date" name="inPatientDate"></td>
+			</tr>
+			<tr>
+				<td>Дата операции</td><td><input type="date" name="procedureDate"></td>
+			</tr>
+			<tr>
+				<td>Диагноз</td><td><input type="text" name="Ds"></td>
+			</tr>
+			<tr>
+				<td>Название операции</td>
+				<td>
+					<select name="procedureName" id="procSelect">
+						<option>Аорто-артериография</option>
+						<option id="CAG">Коронарография</option>
+						<option>Каротидная ангиография</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<button id="ADS_cardiac" class="cardiac" style="">Использовать <b>Angio d'script</b> для описания ангиограмм</button>
+	</main>
+	<footer>
+
+		<p><small><i>&copy; авторские права защищены согласно п.4 ст.1259 ГК РФ</i></small></p>
+	</footer>
+	<script>
+		procSelect.onclick=function () {
+			console.log("Выбрана коронарография");
+			document.getElementById("ADS_cardiac").style="display:block";
+		}	
+	</script>
+</body>
+</html>
