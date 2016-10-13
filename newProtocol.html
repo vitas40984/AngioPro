@@ -2,16 +2,15 @@
 <html lang="en">
 <html>
 <head>
-	<title>Angio d'script - он-лайн сервис для описания ангиограмм</title>
+	<title>Angio Pro - операционный журнал для рентгенэндоваскулярной хирургии</title>
 	<meta charset="utf-8">
-	<meta name="yandex-verification" content="6deab9f49a99d132" />
 	<link rel="stylesheet" href="css/comon.css">
 	<link rel="stylesheet" href="css/newProtocol.css">
 </head>
 <body>
 	<header>
-		<h1 style="margin-left: 25%; color:#000033; font-size: 50pt; margin-top: 0">A n g i o &nbsp; P R O</h1>
-		<p style="margin-top: -55px; margin-left: 10px"><i><b>Он-лайн операционный журнал для рентгенэндоваскулярной хирургии</b></i></p>
+		<h1 style="margin-left: 20%; color:#000033; font-size: 50pt; margin-top: 0">A n g i o &nbsp; P R O <i>t o c o l</i></h1>
+		<p style="margin-top: -45px; margin-left: 10px"><i><b>Он-лайн операционный журнал для рентгенэндоваскулярной хирургии</b></i></p>
 	</header>
 	<main>
 		<h2>Новый протокол</h2>
@@ -45,21 +44,30 @@
 				<td>Диагноз</td><td><input type="text" name="Ds"></td>
 			</tr>
 			<tr>
+				<td>Доза</td><td><input type="text" name="Dose"></td>
+			</tr>
+			<tr>
 				<td>Название операции</td>
 				<td>
 					<select name="procedureName" id="procSelect">
-						<option id="AAG">Аорто-артериография</option>
-						<option id="CAG">Коронарография</option>
-						<option id="carotis">Каротидная ангиография</option>
+						<option value="empty">&nbsp;</option>
+						<option value="AAG">Аорто-артериография</option>
+						<option value="carotis">Каротидная ангиография</option>
+						<option value="CAG">Коронарография</option>
 					</select>
 				</td>
 			</tr>
 		</table>
-		<button id="ADS_cardiac" class="ads" style="">Использовать <b>Angio d'script</b> для описания ангиограмм</button>
-		<button id="ADS_legs" class="ads" style="">Использовать <b>Angio d'script</b> для описания ангиограмм</button>
+		<a id="ADS_but_link" class="link_but">
+			<button id="ADS_but" class="ads">Использовать <b>Angio d'script</b> для описания ангиограмм</button>
+		</a>
+		<p>Описание</p>
+		<textarea id="j_description" rows="20" cols="80"></textarea>
+		<p>Заключение</p>
+		<textarea id="j_conclusion" rows="10" cols="80"></textarea><br>
+		<button id="saveProt" class="link_but">Сохранить протокол</button>
 	</main>
 	<footer>
-
 		<p><small><i>&copy; авторские права защищены согласно п.4 ст.1259 ГК РФ</i></small></p>
 	</footer>
 	<script src="js/ADS-butApear.js"></script>

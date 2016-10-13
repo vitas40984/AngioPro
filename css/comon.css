@@ -3,7 +3,7 @@ body {
 	padding: 0 10px;
 }
 header {
-	background-image: url(img/room70.jpg); 
+	background-image: url(../img/room70.jpg); 
 	height: 100px;
 	border-bottom: 2px solid gray;
 	vertical-align: top;
