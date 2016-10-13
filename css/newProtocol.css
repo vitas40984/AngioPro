@@ -1,7 +1,7 @@
 button.ads {
 	display: none;
-	margin: 10px;
 }
 a.link_but {
 	text-decoration: none;
+	cursor: default;
 }

@@ -16,6 +16,7 @@ footer {
 	border-top: 2px solid gray;
 	padding: 10px;
 	font-size: 10pt;
+	margin-top: 10px;
 }
 footer > div {
 	display: inline-block;
