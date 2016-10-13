@@ -1,0 +1,22 @@
+body {
+	background-image: url();
+	padding: 0 10px;
+}
+header {
+	background-image: url(img/room70.jpg); 
+	height: 100px;
+	border-bottom: 2px solid gray;
+	vertical-align: top;
+	background-repeat: no-repeat;
+	white-space: nowrap;
+}
+
+footer {
+	background-color: #CCCCCC;
+	border-top: 2px solid gray;
+	padding: 10px;
+	font-size: 10pt;
+}
+footer > div {
+	display: inline-block;
+}
